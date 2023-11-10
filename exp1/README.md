@@ -55,10 +55,7 @@ with open('train.txt', 'w') as train_file:
 with open('Validation.txt', 'w') as check_file:
     for label in check_data:
         check_file.writelines(check_data[label])label in check_data:
-       
 ```
-
- 
 
 ## 数据以及Bert模型载入
 
@@ -176,8 +173,6 @@ mlp_model = MLP(input_dim, hidden_dim, output_dim).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(mlp_model.parameters(), lr=learning_rate)
 ```
-
-
 
 ------------------------------
 
